@@ -1,0 +1,7 @@
+buat akun github
+
+finishing modularisasi halaman include templatingnya
+buat database baru BLOG
+implementasikan skema desain blog entri kemarin ke mysql 
+mengisi konten table data BLOG di mysql
+tampilkan datanya di projek masing masing 
