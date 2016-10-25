@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="description" content="Latih Otak"/>
+    <meta name="author" content="Latih Otak"/>
+    <meta property="og:site_name" content="Latih Otak"></meta>
+    <meta property="og:title" content="Latih Otak"></meta>
+    <meta property="og:type" content="website"></meta>
+    <meta property="og:url" content=""></meta>
+    <meta property="og:image" content=""></meta>
+    <meta property="og:locale" content="id_ID"></meta>
+	<meta content='Indonesia' name='geo.placename'/>
+	<meta content='id' name='geo.country'/>
+
+    <title>Latih Otak</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+	
+   <!--    <link href="../../assets/css/mj.css" rel="stylesheet">
+  Custom CSS -->
+	<link href="../../assets/css/font-awesome.css" rel="stylesheet">
+<style>
+body{background:#54b4eb;}
+/**********************************
+Responsive navbar-brand image CSS
+- Remove navbar-brand padding for firefox bug workaround
+- add 100% height and width auto ... similar to how bootstrap img-responsive class works
+***********************************/
+        @font-face {
+            font-family: 'Harabara';
+            src: url('../../assets/fonts/Harabara.ttf') format('truetype');
+            font-style: normal;
+        }
+.navbar{
+	font-family: harabara;
+    text-transform: uppercase;
+    font-weight: 700;
+	font-size:4vmin;
+	margin-bottom: 0;
+    background-color: #3498db;
+    border: 0;
+    opacity:0.9;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand>img {
+  height: 100%;
+  padding: 15px 0px;
+  width: 62.927vmin;
+}
+.navbar-nav li a {
+	color: #FFF !important;
+}
+.navbar-nav li a:hover {
+    background-color: #00A1F1 !important;
+	color: #FFF !important;
+}
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #0F7DC2 !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+.navbar-nav>li>a{
+	padding-bottom:25px;
+	padding-top:25px;
+}
+.open .dropdown-toggle {
+    color: #fff ;
+    background-color: #3498db !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #00A1F1 !important;
+}
+/* EXAMPLE 3
+
+line height is 20px by default so add 30px top and bottom to equal the new .navbar-brand 80px height  */
+
+.navbar-brand {
+  height: 96px;
+}
+
+.nav >li >a {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+.nav >li >a.dropdown-toggle {
+  padding:25px 40px;
+}
+
+/* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+.navbar-alignit .navbar-header {
+	  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 50px;
+}
+.navbar-alignit .navbar-brand {
+	top: 50%;
+	display: block;
+	position: relative;
+	height: auto;
+	-webkit-transform: translate(0,-50%);
+	        transform: translate(0,-50%);
+	margin-right: 15px;
+  margin-left: 15px;
+}
+.tiny-bulat{
+  position:initial;
+  background: darksalmon;
+    border: 2px solid #FFF;
+    border-radius: 100%;
+    top: -15px;
+    left: -10px;
+    margin: auto;
+    padding-top: 18px;
+    padding-left: 15px;
+    width: 75px;
+    height: 75px;
+    z-index: 90909;
+}
+.tiny-i{/*24 mei*/
+  float:left;
+  display:inline-block;
+  object-fit:contain;
+}
+.tiny-peng{display: inline-block;font-family: harabara;text-transform: none;font-size: 2.5vmin;}
+
+.navbar-nav>li>.dropdown-menu {
+	z-index: 9999;
+	margin-top:10px;
+}
+
+/* first level menu items */
+.navbar-right > li {
+	display: inline-block;
+	margin: 0 2.6em;
+	position: relative;
+}
+
+.navbar-right > li > a {
+	padding: 0 0.3em;
+	font-size: 1.2em;
+	display: block;
+	color: #fff;
+}
+
+.dropdown-menu {
+	position: absolute;
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	padding: 0;
+	text-align: left;
+	pointer-events: none;
+	-webkit-transition: visibility 0s, opacity 0s;
+	-moz-transition: visibility 0s, opacity 0s;
+	transition: visibility 0s, opacity 0s;
+}
+
+.open .dropdown-menu {
+	width: 16em;
+	left: 50%;
+	margin: 0 0 0 -8em;
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	-webkit-transition: visibility 0s, opacity 0.3s;
+	-moz-transition: visibility 0s, opacity 0.3s;
+	transition: visibility 0s, opacity 0.3s;
+}
+.open .dropdown-menu {
+	top: 100%;
+}
+.dropdown-menu > li {
+	display: block;
+	background: #fff;
+}
+
+.dropdown-menu:after {
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.open .dropdown-menu:after {
+	top: 0%;
+	margin-top: -30px;
+}
+
+
+.dropdown-menu:after {
+	border-color: transparent;
+	border-width: 16px;
+	margin-left: -16px;
+	left: 50%;
+}
+.open .dropdown-menu:after {
+	border-bottom-color: #fff;
+}
+
+.dropdown-menu > li {
+	display: block;
+	background: #fff;
+}
+
+.dropdown-menu > li > a {
+	padding: 5px 2.3em 5px 0.6em; /* top/bottom paddings in 'em' cause a tiny "jump" in Chrome on Win */
+	display: block;
+	font-size: 1.2em;
+	position: relative;
+	color: #47a3da;
+	border: 4px solid #fff;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+</style>
+</head>
+
+<body id="page-top" class="index">
+<!-- navbar atas -->
+
+<!-- profil -->
+
+  <nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar3">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://disputebills.com"><img src="../../assets/image/best.png" alt="Dispute Bills">
+        </a>
+      </div>
+      <div id="navbar3" class="navbar-collapse collapse">
+	  <ul class="nav navbar-nav klasemen">
+                    <li class="hidden">
+                        <a href="page-top"></a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#profil">Profil</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#klasemen">klasemen</a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#ranking">Ranking</a>
+                    </li>
+					
+				</ul>
+        <ul class="nav navbar-nav navbar-right">
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						<div class="tiny-bulat tiny-i">
+								
+							</div>
+						
+						<div class="tiny-peng"><img src="../../assets/image/avatar/chip.png"/><?php/* echo $Koin; */?>1000<br><?php /*echo $Nama;*/ ?> Username</div>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="../Proses/Logout.php">Keluar</a></li>
+							<li><a href="../Proses/Logout.php">Keluar</a></li>
+						</ul>
+					</li>
+				</ul>
+				
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+
+
+
+    <!-- jQuery -->
+    <script src="../../assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../../assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../../assets/js/jquery.easing.min.js"></script>
+    <script src="../../assets/js/classie.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="../../assets/js/jqBootstrapValidation.js"></script>
+    <script src="../../assets/js/contact_me.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../../assets/js/mj.js"></script>
+	<script src="../../assets/js/mj-ef.js"></script>
+</body>
+	<script>
+	$('document').ready(function(){
+		$('.cari-lo').hide();
+	});
+	</script>
+</html>
