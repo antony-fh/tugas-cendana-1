@@ -1,0 +1,16 @@
+#content { 
+    background: green; 
+    float: right; width: 60%; margin-right: 20%; margin-left: -80%;
+}
+#right { 
+    background: blue;
+    width: 20%; float: right;
+}
+#left {
+    background: red;
+    width: 20%; float: left;
+}
+#footer {
+    background: gray;
+    clear: both;   
+}

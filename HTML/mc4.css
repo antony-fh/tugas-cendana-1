@@ -1,0 +1,26 @@
+
+body{
+	background: #DCC6E0;
+}
+#ktk{
+	position: relative;
+	fo
+	width: 50px;
+	height: 200px;
+	background-color: snow;
+	left: 50;
+	top: 50;
+	transition: height 2s ease-in, width 2s ease-in, background-color 2s ease-out;
+	border-radius: 15px 15px 0px 0px; 
+}
+#ktk:hover{
+	width: 55px;
+	height: 500px;
+	background: red;
+}
+h1{
+	font-family: "Market Deco";
+	color: #bc93c3;
+	font-size: 300px;
+	text-shadow: inset 1px 1px 1px white;
+}

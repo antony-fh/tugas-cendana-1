@@ -1,0 +1,200 @@
+background-repeat
+- repeat
+- no-repeat
+- repeat-x
+- repeat-y
+
+background-attachment
+- scroll
+- fixed
+- local
+
+background-size
+-x width
+-y height
+
+Pseudo Class
+:acive/:hover/:focus
+
+:first-child
+:last-child
+:nth-child
+:nth-of-type
+:not
+3n+4
+odd  | ganjil
+even | genap
+
+combinator
+descendant selector (space)
+child selector (>)
+orang-tua > anak
+
+adjacent sibling selector (+)
+div + p ||| Elemen berdekatan
+<div>
+</div>
+	<p>
+	</p>
+
+
+general sibling selector (~)
+div ~ a ||| Elemen yang sejajar
+<div>
+</div>
+	<p>
+	</p>
+	<a></a>
+
+
+input [type='text']
+input ['nama attribute' = 'value']
+
+1. Analisa 
+	- target
+		-anak2
+		-remaja
+		-dewasa
+		-semua umur
+	-jenis
+		-e commerce
+		-blog
+		-company profile
+2. Survey
+	-data
+	-warna
+	-konten
+3. Perancangan
+	-sitemap
+	-wireframing :: sketsa
+	-mockuping :: photoshop
+	-prototyping :: HTML/CSS statis
+
+
+Relational:
+	MySQL / MariaDB -> salah satu jenis dbms
+	postgre
+	oracle
+	db2
+
+NoSQL : 
+	mongoDB
+
+desain databaase
+struktur database
+CRUDSearch
+
+
+SELECT 
+pegawai.nama,
+pegawai.telepon,
+pegawai.Alamat,
+pegawai.kelamin as Jenis_Kelamin,
+pegawai.id_posisi,
+pegawai.status,
+j_kelamin.nama as nama_kelamin
+FROM pegawai,j_kelamin
+WHERE pegawai.kelamin = j_kelamin.id_kelamin
+
+SELECT
+	posisi.nama as nama_dep,
+	count(id_pegawai) as Jumlah_pegawai
+FROM
+	pegawai, posisi
+WHERE
+	pegawai.id_posisi = posisi.id
+group by 
+	posisi.id
+
+mencari nama posisi HRD dengan asal malang dan jumlah pegawainya
+SELECT
+	posisi.nama,kota.nama_kota as nama_kota,
+	count(pegawai.id_pegawai) as Jumlah_pegawai
+FROM
+	pegawai, posisi,kota
+WHERE
+	pegawai.id_posisi= posisi.id and
+	pegawai.kota = kota.id_kota and
+	posisi.id ='P02'
+
+
+md5(concat(now(),rand())) 
+
+sql unique id
+
+jquery attr
+untuk mencari value dari attribute
+
+blog(html & css)
+kalkulator (jquery)
+crud pegawai(php)
+
+full fungsi
+bootstrap
+ajax (delete + search)
+
+$('.removeForm').on
+
+function(e)
+
+e.preventdefault(); // tanpa direfresh
+
+var var=$(this).serialize();
+data: var
+
+Notasi Format Data
+- json			: JavaScript Object Notation
+{
+		"datakota" :[
+			{
+				"id" : "1",
+				"nama" : "Malang"
+			},
+			{
+				"id" : "2",
+				"nama" : "Nganjuk"
+			},
+			{
+				"id" : "3",
+				"nama" : "Blitar"
+			},
+			{
+				"id" : "4",
+				"nama" : "Tulungagung"
+			}
+		]
+	}
+- xml			: Extensible Markup Language
+<datakota>
+	<detailkota>
+		<id>1</id>
+		<nama>Malang</nama>
+	</detailkota>
+	<detailkota>
+		<id>2</id>
+		<nama>Nganjuk</nama>
+	</detailkota>
+	<detailkota>
+		<id>3</id>
+		<nama>Blitar</nama>
+	</detailkota>
+	<detailkota>
+		<id>4</id>
+		<nama>Tulungagung</nama>
+	</detailkota>
+</datakota>
+- yaml / yml 	: Yet Another Markup Language
+
+datakota:
+	detail:
+		id : 1
+		nama : Malang
+	detail:
+		id : 2
+		nama : Nganjuk
+	detail:
+		id : 3
+		nama : Blitar
+	detail:
+		id : 4
+		nama : Tulungagung

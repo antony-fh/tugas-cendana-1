@@ -1,0 +1,55 @@
+body{
+	background: cornflowerblue ;
+	font-family: "helvetica", "sans-serif";
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 10px;
+	font-family: "Pacifico", "sans-serif";
+    font-weight: 600;
+    color: #ECF0F1;
+    text-shadow: -3px 2px black;
+}
+fieldset{
+	border:0;
+	background: wheat;
+	border-radius: 5px;
+}
+legend{
+	padding: 4px 8px;
+	background: salmon;
+	color: white;
+	font-weight: 600;
+}
+input, select{
+	border:0;
+	padding: 4px 2px;
+}
+select{
+	width: 100%;
+}
+button{
+	border: 0;
+	padding: 4px 15px;
+	background: sandybrown;
+	color:ghostwhite;
+	font-weight: bold;
+}
+button, button:hover{
+	transition: all 0.4s ease;
+}
+button:hover{
+	color: sandybrown;
+	background :ghostwhite;
+	letter-spacing: 2px;	
+}
+button:active,button:focus{
+	background: salmon;
+	color:ghostwhite;
+}
+div#formkiri,div#formkanan{
+	display: inline-table;
+}
+div{
+	padding: 3px 0px;
+}

@@ -1,0 +1,67 @@
+body{
+	background: cornflowerblue ;
+	font-family: sans-serif;
+}
+span{
+	color: grey;
+}
+h1, h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-weight: 600;
+    color: inherit;
+}
+p{
+	font-size: 16px;
+	font-weight: 400;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+blockquote {
+    padding: 12px 16px;
+    margin: 0 0 16px;
+    font-size: 18px;
+    border-left: 5px solid slategrey;
+}
+blockquote span{
+	display: block;
+}
+blockquote span:before, blockquote span:after{
+    content: ' " ';
+}
+a{
+	color: dodgerblue;
+	text-decoration: none;
+}
+img{
+	width: 100%;
+}
+fieldset{
+	border:0;
+	background: wheat;
+}
+legend{
+	padding: 4px 8px;
+	background: salmon;
+}
+input, select{
+	border:0;
+	padding: 4px 2px;
+
+}
+button{
+	border: 0;
+	padding: 4px 9px;
+	background: sandybrown;
+	color:ghostwhite;
+}
+.dasar{
+	width: 800px;
+	padding: 8px 16px;
+    margin:auto;
+    background: ghostwhite;
+}
+

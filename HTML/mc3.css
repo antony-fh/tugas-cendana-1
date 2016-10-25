@@ -1,0 +1,40 @@
+
+body{
+	background: #DCC6E0;
+}
+#ktk{
+	position: relative;
+	width: 465px;
+	height: 250px;
+	background: #FFF;
+	left: 29%;
+	top: 10;
+	border-radius: 46%;
+	box-shadow: 0 25px 0px #E74C3C,
+				0 35px 0px #FFF,
+				0 65px 0px #F39C12,
+				0 75px 0px #FFF,
+				0 105px 0px #E9D460,
+				0 115px 0px #FFF,
+				0 145px 0px #87D37C,
+				0 155px 0px #FFF,
+				0 185px 0px #54A4EB,
+				0 195px 0px #FFF,
+				0 225px 0px #D2527F,
+				0 235px 0px #FFF;
+}
+#ktk p{
+	position: inherit;
+	text-align: center;
+	top: 29%;
+	font-family: "Pacifico";
+	font-size: 48px;
+	font-weight: 400;
+    color: salmon;
+}
+h1{
+	color: #FFF;
+}
+#ktk:active{
+
+}
